@@ -32,8 +32,13 @@ app = FastAPI(
     redoc_url="/redoc",
 )
 
-# 🔥 MONTA A PASTA STATIC
-app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# 🔥 Verifica se a pasta static existe; se não, cria
+static_dir = "static"
+if not os.path.exists(static_dir):
+    os.makedirs(static_dir)
+
+app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 # CORS
 app.add_middleware(
