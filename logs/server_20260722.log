@@ -1,0 +1,8 @@
+2026-07-22 00:15:26,340 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2026-07-22 00:15:26,341 - [33mPress CTRL+C to quit[0m
+2026-07-22 00:16:02,396 - 127.0.0.1 - - [22/Jul/2026 00:16:02] "[31m[1mGET /chat?message=Ola%20tudo%20bem HTTP/1.1[0m" 405 -
+2026-07-22 00:16:33,229 - 127.0.0.1 - - [22/Jul/2026 00:16:33] "POST /chat HTTP/1.1" 200 -
+2026-07-22 00:17:45,611 - 127.0.0.1 - - [22/Jul/2026 00:17:45] "POST /chat HTTP/1.1" 200 -
